@@ -1,5 +1,5 @@
-# JAMF
-Jamf Scripts
+# JAMF Uninstall Deep Freeze
+Removes Deep Freeze with one policy 
 
 1. Create a policy to run this script, triggered at reoccurring check-in, scoped to a smart group for computers 
 with DFXControl.app installed.       

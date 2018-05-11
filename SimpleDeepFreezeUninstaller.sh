@@ -17,12 +17,12 @@ echo "The Folder Exists"
     elif [ "$FrozenStatus" = "Frozen" ]; then
 	    echo "I'm freezing"
         # Thaw
-        DFXPSWD="Far0nicsFr0zen" /Library/Application\ Support/Faronics/Deep\ Freeze/deepfreeze -u "ECSUdfitstaff" -p bootThawed
+        DFXPSWD=" " /Library/Application\ Support/Faronics/Deep\ Freeze/deepfreeze -u " " -p bootThawed
         shutdown -r now 
         
 	    else
 		    echo "I'm already thawed!"
-            DFXPSWD="Far0nicsFr0zen" /Library/Application\ Support/Faronics/Deep\ Freeze/deepfreeze -u "ECSUdfitstaff" -p uninstall
+            DFXPSWD=" " /Library/Application\ Support/Faronics/Deep\ Freeze/deepfreeze -u " " -p uninstall
             jamf policy -event updateinventory
             exit 0
 		fi

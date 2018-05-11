@@ -1,6 +1,8 @@
 # JAMF Uninstall Deep Freeze
 Removes Deep Freeze with one policy 
+
 DeepFreezeUnistaller.sh was a practice using LaunchDaemons and can cause boot loops if somthing goes wrong!
+
 SimpleDeepFreezeUninstaller.sh is the practical way to go.
 
 1. Create a policy to run this script, triggered at reoccurring check-in, scoped to a smart group for computers 

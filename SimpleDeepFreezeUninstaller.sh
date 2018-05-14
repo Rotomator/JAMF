@@ -14,7 +14,7 @@ FrozenStatus='/usr/bin/defaults read /Library/Preferences/com.apple.RemoteDeskto
 if [[ -d /Applications/Faronics/DFXControl.app ]]; then
 echo "The Folder Exists"
 
-    elif [ "$FrozenStatus" = "Frozen" ]; then
+    if [ "$FrozenStatus" = "Frozen" ]; then
 	    echo "I'm freezing"
         # Thaw
         DFXPSWD=" " /Library/Application\ Support/Faronics/Deep\ Freeze/deepfreeze -u " " -p bootThawed
@@ -24,6 +24,7 @@ echo "The Folder Exists"
 		    echo "I'm already thawed!"
             DFXPSWD=" " /Library/Application\ Support/Faronics/Deep\ Freeze/deepfreeze -u " " -p uninstall
             jamf policy -event updateinventory
+	    shutdown -r now 
             exit 0
 		fi
-
+fi

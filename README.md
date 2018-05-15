@@ -13,6 +13,8 @@ longer be exicuted on the computer.
 
 3. Create a policy to update inventory.  Also add or remove any custom policies in the script.  
 
-4. Use your DF username and password!!!                                                                           
+4. Use your DF username and password!!!   
+
+5. You may want to rebuild your fusion drive if it was disabled for deepfreeze.  FusionRebuild.sh is how I completed this process. 
 
 
